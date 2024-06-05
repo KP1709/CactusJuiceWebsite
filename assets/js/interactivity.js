@@ -1,3 +1,17 @@
+// Transition for Hero section
+const heroImg = document.getElementById("hero__img");
+const hero = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        heroImg.classList.add('slide-in-left')
+        return;
+      }
+    });
+  }, { threshold: 1 });
+  
+hero.observe(document.querySelector('section#hero'));
+
+
 // Transition for Ingredient section
 const ingredientUnderline = document.querySelector('path')
 const ingredients = new IntersectionObserver(entries => {

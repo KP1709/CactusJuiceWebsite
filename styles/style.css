@@ -124,6 +124,9 @@ main section#hero.grid #hero__img {
   width: 50%;
   justify-self: center;
 }
+main section#hero.grid #hero__img.slide-in-left {
+  margin-left: 0;
+}
 @media (min-width: 500px) {
   main section#hero.grid #hero__img {
     width: 30%;
@@ -132,6 +135,18 @@ main section#hero.grid #hero__img {
 @media (min-width: 1000px) {
   main section#hero.grid #hero__img {
     width: 30em;
+  }
+}
+main section#hero.grid .slide-in-left {
+  animation: ease-in-out 1s slide-left;
+  margin-left: 0;
+}
+@keyframes slide-left {
+  0% {
+    margin-left: -1000px;
+  }
+  100% {
+    margin-left: 0;
   }
 }
 main section#hero.grid p {

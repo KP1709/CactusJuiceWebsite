@@ -101,7 +101,7 @@ p {
 
 body {
     font-family: font(body-font), font(backup-font);
-    background-color: colors(mid-light-green);    
+    background-color: colors(mid-light-green);
 }
 
 
@@ -109,7 +109,7 @@ section {
     padding: 40px 10px;
 }
 
-section:not(#hero){
+section:not(#hero) {
     @include laptop-large {
         margin: 0 auto;
         max-width: 1500px;
@@ -202,6 +202,10 @@ main {
             width: 50%;
             justify-self: center;
 
+            &.slide-in-left {
+                margin-left: 0;
+            }
+
             @include tablet-small {
                 width: 30%;
             }
@@ -209,6 +213,22 @@ main {
             @include laptop-small {
                 width: 30em;
             }
+        }
+
+        .slide-in-left {
+            animation: ease-in-out 1s slide-left;
+            margin-left: 0;
+
+            @keyframes slide-left {
+                0% {
+                    margin-left: -1000px;
+                }
+
+                100% {
+                    margin-left: 0;
+                }
+            }
+
         }
 
         p {
