@@ -14,7 +14,7 @@ const hero = new IntersectionObserver(entries => {
         return;
       }
     });
-  }, { threshold: 1 });
+  }, { threshold: 0.75 });
   
 hero.observe(document.querySelector('section#hero'));
 
