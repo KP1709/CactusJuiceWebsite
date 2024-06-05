@@ -773,7 +773,8 @@ main {
         }
     }
 
-    section#recommend {
+    section#recommend.col {
+        align-items: center;
 
         #recommend__drinks.grid {
             grid-template-rows: repeat(4, 1fr);
