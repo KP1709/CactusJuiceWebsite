@@ -153,7 +153,6 @@ main section#hero.grid p {
 main section#quote {
   grid-template-columns: auto;
   grid-template-rows: repeat(4, 1fr);
-  grid-template-areas: "quote__line-1" "quote__line-2" "quote__line-3" "quote__line-4";
 }
 @media (min-width: 800px) {
   main section#quote {
