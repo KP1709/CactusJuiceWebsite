@@ -638,41 +638,60 @@ main section#product #product__content.grid button#quantity-btn-increase {
   border: 2px solid #006400;
   background-color: #c2e2c2;
 }
+main section#recommend #recommend__drinks.grid {
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr;
+  grid-template-areas: "drink-1" "drink-2" "drink-3" "drink-4";
+  justify-items: center;
+}
 @media (min-width: 500px) {
-  main section#recommend.col {
-    flex-direction: row;
+  main section#recommend #recommend__drinks.grid {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "drink-1" "drink-2", "drink-3" "drink-4";
   }
 }
-main section#recommend.col div.col {
+@media (min-width: 1000px) {
+  main section#recommend #recommend__drinks.grid {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "drink-1" "drink-2" "drink-3" "drink-4";
+  }
+}
+main section#recommend #recommend__drinks.grid li.col {
   align-items: center;
 }
-main section#recommend.col div.col img {
+main section#recommend #recommend__drinks.grid li.col img {
   width: 70%;
   border-radius: 20px;
 }
 @media (min-width: 1000px) {
-  main section#recommend.col div.col img {
+  main section#recommend #recommend__drinks.grid li.col img {
     width: 70%;
     max-width: 50em;
   }
 }
-main section#recommend.col div.col p {
+main section#recommend #recommend__drinks.grid li.col p {
   margin-top: 5px;
   align-self: center;
 }
 @media (min-width: 500px) {
-  main section#recommend.col div.col p {
+  main section#recommend #recommend__drinks.grid li.col p {
     text-wrap: wrap;
     text-align: center;
   }
 }
-main section#recommend.col div.col + div.col {
-  margin-top: 20px;
+main section#recommend #recommend__drinks.grid li.col #drink-1 {
+  grid-area: drink-1;
 }
-@media (min-width: 500px) {
-  main section#recommend.col div.col + div.col {
-    margin-top: 0px;
-  }
+main section#recommend #recommend__drinks.grid li.col #drink-2 {
+  grid-area: drink-2;
+}
+main section#recommend #recommend__drinks.grid li.col #drink-3 {
+  grid-area: drink-3;
+}
+main section#recommend #recommend__drinks.grid li.col #drink-4 {
+  grid-area: drink-4;
 }
 
 footer {
