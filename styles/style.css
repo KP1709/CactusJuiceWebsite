@@ -638,6 +638,11 @@ main section#product #product__content.grid button#quantity-btn-increase {
   border: 2px solid #006400;
   background-color: #c2e2c2;
 }
+@media (min-width: 500px) {
+  main section#recommend.col {
+    flex-direction: row;
+  }
+}
 main section#recommend.col div.col {
   align-items: center;
 }
@@ -645,11 +650,29 @@ main section#recommend.col div.col img {
   width: 70%;
   border-radius: 20px;
 }
+@media (min-width: 1000px) {
+  main section#recommend.col div.col img {
+    width: 70%;
+    max-width: 50em;
+  }
+}
 main section#recommend.col div.col p {
   margin-top: 5px;
+  align-self: center;
+}
+@media (min-width: 500px) {
+  main section#recommend.col div.col p {
+    text-wrap: wrap;
+    text-align: center;
+  }
 }
 main section#recommend.col div.col + div.col {
   margin-top: 20px;
+}
+@media (min-width: 500px) {
+  main section#recommend.col div.col + div.col {
+    margin-top: 0px;
+  }
 }
 
 footer {

@@ -774,21 +774,41 @@ main {
     }
 
     section#recommend.col {
+
+        @include tablet-small{
+            flex-direction: row;
+        }
+
         div.col {
             align-items: center;
 
             img {
                 width: 70%;
                 border-radius: 20px;
+
+                @include laptop-small{
+                    width: 70%;
+                    max-width: 50em;
+                }
             }
 
             p{
                 margin-top: 5px;
+                align-self: center;
+
+                @include tablet-small{
+                    text-wrap: wrap;
+                    text-align: center;
+                }
             }
         }
 
         div.col + div.col{
             margin-top: 20px;
+
+            @include tablet-small{
+                margin-top: 0px;
+            }
         }
     }
 }
