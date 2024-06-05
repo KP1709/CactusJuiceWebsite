@@ -1,9 +1,16 @@
+// Get width of current window
+var width = window.innerWidth;
+
 // Transition for Hero section
 const heroImg = document.getElementById("hero__img");
 const hero = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
+      if (entry.isIntersecting && width < 1000) {
         heroImg.classList.add('slide-in-left')
+        return;
+      }
+      else if (entry.isIntersecting && width >= 1000) {
+        heroImg.classList.add('slide-in-down')
         return;
       }
     });

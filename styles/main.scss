@@ -212,6 +212,10 @@ main {
 
             @include laptop-small {
                 width: 30em;
+
+                &.slide-in-down {
+                    margin-top: 0;
+                }
             }
         }
 
@@ -228,7 +232,21 @@ main {
                     margin-left: 0;
                 }
             }
+        }
 
+        .slide-in-down {
+            animation: ease-in-out 1s slide-down;
+            margin-top: 0;
+
+            @keyframes slide-down {
+                0% {
+                    margin-top: -1000px;
+                }
+
+                100% {
+                    margin-top: 0;
+                }
+            }
         }
 
         p {
