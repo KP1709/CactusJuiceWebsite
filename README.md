@@ -4,7 +4,9 @@
 HTML / SASS + SCSS / Vanilla Javascript / Vite / npm / Node.js / Netlify / Spline / Microsoft Designer
 
 ## 🍼 Introduction
-Inspired by Avatar: The Last Airbender, I created a product site advertising cactus juice as shown in the series. I wanted to have the opportunity to practice my skills using Vanilla Javascript. In addition, I wanted to improve my SASS/SCSS skills. Overtime as the project grew, I explored different areas such as implementing animations using the Intersection Observer API and creating 3D models using Spline. (Although I don't have a background in 3D modelling, it's something I would like to continue learning.)
+Inspired by Avatar: The Last Airbender, I created a product site advertising cactus juice as shown in the series. I wanted to have the opportunity to practice my skills using Vanilla Javascript. In addition, I wanted to improve my SASS/SCSS skills. Overtime as the project grew, I explored different areas such as implementing animations using the Intersection Observer API and creating a 3D model using Spline. 
+
+(Although I don't have a background in 3D modelling, it's something I would like to continue learning.)
 
 ## 🛠️ Features
 - Simple scroll animations implemented when moving to different sections
@@ -28,4 +30,4 @@ Inspired by Avatar: The Last Airbender, I created a product site advertising cac
 ## ➕ Potential Features to Add
 - Connect to a mock database to demonstrate inventory
 - Integrate spline viewer to display the 3D model to add interactivity
-- Increase quantity buttons (+ / -) when in mobile/tablet view 
+- Increase quantity buttons size (+ / -) when in mobile/tablet view 
