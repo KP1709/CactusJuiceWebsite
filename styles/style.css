@@ -640,12 +640,17 @@ main section#product #product__content.grid button#quantity-btn-increase {
 }
 main section#recommend.col {
   align-items: center;
+  background-color: #caee9f;
+}
+main section#recommend.col h2 {
+  text-align: center;
 }
 main section#recommend.col #recommend__drinks.grid {
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: 1fr;
   grid-template-areas: "drink-1" "drink-2" "drink-3" "drink-4";
   justify-items: center;
+  row-gap: 15px;
 }
 @media (min-width: 500px) {
   main section#recommend.col #recommend__drinks.grid {
@@ -659,6 +664,7 @@ main section#recommend.col #recommend__drinks.grid {
     grid-template-rows: 1fr;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "drink-1" "drink-2" "drink-3" "drink-4";
+    row-gap: 0px;
   }
 }
 main section#recommend.col #recommend__drinks.grid li.col {
