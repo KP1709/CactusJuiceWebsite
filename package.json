@@ -1,0 +1,19 @@
+{
+  "name": "cactusjuicewebsite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "compile": "sass --watch --no-source-map styles/main.scss styles/style.css"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "netlify": "^13.1.17",
+    "sass": "^1.77.2"
+  }
+}
