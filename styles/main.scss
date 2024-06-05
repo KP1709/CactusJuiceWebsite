@@ -95,6 +95,7 @@ $laptop-large: 1750px;
 html,
 body,
 h2,
+h4,
 p {
     margin: 0;
 }
@@ -768,6 +769,89 @@ main {
                     border: 2px solid colors(dark-green);
                     background-color: colors(light-green-2);
                 }
+            }
+        }
+    }
+
+    section#recommend.col {
+        align-items: center;
+        background-color: colors(mid-light-green);
+
+        h2{
+            text-align: center;
+        }
+
+        #recommend__drinks.grid {
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "drink-1"
+                "drink-2"
+                "drink-3"
+                "drink-4";
+
+            justify-items: center;
+            row-gap: 15px;
+
+
+            @include tablet-small {
+                grid-template-rows: repeat(2, 1fr);
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-areas:
+                    "drink-1" "drink-2",
+                    "drink-3" "drink-4";
+            }
+
+            @include laptop-small {
+                grid-template-rows: 1fr;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas:
+                    "drink-1" "drink-2" "drink-3" "drink-4";
+                row-gap: 0px;
+
+            }
+
+            li.col {
+                align-items: center;
+
+                img {
+                    width: 70%;
+                    border-radius: 20px;
+
+                    @include laptop-small {
+                        width: 70%;
+                        max-width: 50em;
+                    }
+                }
+
+
+
+                p {
+                    margin-top: 5px;
+                    align-self: center;
+
+                    @include tablet-small {
+                        text-wrap: wrap;
+                        text-align: center;
+                    }
+                }
+
+                #drink-1 {
+                    grid-area: drink-1;
+                }
+
+                #drink-2 {
+                    grid-area: drink-2;
+                }
+
+                #drink-3 {
+                    grid-area: drink-3;
+                }
+
+                #drink-4 {
+                    grid-area: drink-4;
+                }
+
             }
         }
     }
