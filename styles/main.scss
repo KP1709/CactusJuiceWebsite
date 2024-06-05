@@ -95,6 +95,7 @@ $laptop-large: 1750px;
 html,
 body,
 h2,
+h4,
 p {
     margin: 0;
 }
@@ -769,6 +770,25 @@ main {
                     background-color: colors(light-green-2);
                 }
             }
+        }
+    }
+
+    section#recommend.col {
+        div.col {
+            align-items: center;
+
+            img {
+                width: 70%;
+                border-radius: 20px;
+            }
+
+            p{
+                margin-top: 5px;
+            }
+        }
+
+        div.col + div.col{
+            margin-top: 20px;
         }
     }
 }

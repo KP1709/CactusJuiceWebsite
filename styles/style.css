@@ -27,6 +27,7 @@
 html,
 body,
 h2,
+h4,
 p {
   margin: 0;
 }
@@ -636,6 +637,19 @@ main section#product #product__content.grid button#quantity-btn-increase {
   border-radius: 0 0 5px 0;
   border: 2px solid #006400;
   background-color: #c2e2c2;
+}
+main section#recommend.col div.col {
+  align-items: center;
+}
+main section#recommend.col div.col img {
+  width: 70%;
+  border-radius: 20px;
+}
+main section#recommend.col div.col p {
+  margin-top: 5px;
+}
+main section#recommend.col div.col + div.col {
+  margin-top: 20px;
 }
 
 footer {
