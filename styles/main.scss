@@ -189,10 +189,10 @@ main {
             text-stroke: 1px black;
             color: colors(dark-green);
             justify-self: center;
+            text-align: center;
 
             @include laptop-small {
                 font-size: 6rem;
-                text-align: center;
                 justify-self: none;
             }
         }

@@ -111,11 +111,11 @@ main section#hero.grid h1 {
   text-stroke: 1px black;
   color: #006400;
   justify-self: center;
+  text-align: center;
 }
 @media (min-width: 1000px) {
   main section#hero.grid h1 {
     font-size: 6rem;
-    text-align: center;
     justify-self: none;
   }
 }
