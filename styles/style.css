@@ -166,6 +166,11 @@ main section#hero.grid #hero__img-laptop {
     padding: 0 5px;
   }
 }
+@media (min-width: 1750px) {
+  main section#hero.grid #hero__img-laptop {
+    max-width: 500px;
+  }
+}
 main section#hero.grid .slide-in-down {
   animation: ease-in-out 1s slide-down;
   margin-top: 0;

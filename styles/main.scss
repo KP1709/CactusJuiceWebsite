@@ -246,6 +246,10 @@ main {
                 width: 40%;
                 padding: 0 5px;
             }
+
+            @include laptop-large{
+                max-width: 500px;
+            }
         }
 
 
