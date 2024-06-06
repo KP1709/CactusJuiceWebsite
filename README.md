@@ -1,10 +1,11 @@
 # Cactus Juice Website
+[![Netlify Status](https://api.netlify.com/api/v1/badges/af98459a-c01b-4f9a-bf7b-7873a69ff245/deploy-status)](https://app.netlify.com/sites/kareenapatel-cactusjuice/deploys)
 
 ## ⌨️ Technology + Asset Stack 
 HTML / SASS + SCSS / Vanilla Javascript / Vite / npm / Node.js / Netlify / Spline / Microsoft Designer
 
 ## 🍼 Introduction
-Inspired by Avatar: The Last Airbender, I created a product site advertising cactus juice as shown in the series. I wanted to have the opportunity to practice my skills using Vanilla Javascript. In addition, I wanted to improve my SASS/SCSS skills. Overtime as the project grew, I explored different areas such as implementing animations using the Intersection Observer API and creating a 3D model using Spline. 
+Inspired by Avatar: The Last Airbender, I created a product site advertising cactus juice as shown in the series. I wanted to have the opportunity to practice my skills using Vanilla Javascript. In addition, I wanted to improve my SASS/SCSS skills. Over time as the project grew, I explored different areas such as implementing animations using the Intersection Observer API and creating a 3D model using Spline. 
 
 (Although I don't have a background in 3D modelling, it's something I would like to continue learning.)
 
