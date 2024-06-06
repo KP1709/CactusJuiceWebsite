@@ -842,15 +842,23 @@ main {
                     }
                 }
 
-
-
                 p {
-                    margin-top: 5px;
                     align-self: center;
+                    margin-top: 5px;
 
                     @include tablet-small {
                         text-wrap: wrap;
                         text-align: center;
+                    }
+                }
+
+                a{
+                    &:any-link{
+                        color: colors(dark-green);
+                        text-decoration: none;
+                        padding: 2px 10px;
+                        background-color: colors(light-green);
+                        border-radius: $quantity-radius;
                     }
                 }
 
