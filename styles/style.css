@@ -84,6 +84,12 @@ header.row h2 {
   padding: 0 0 0 0;
   align-self: center;
 }
+header.row h2::before, header.row h2::after {
+  font-family: "Font Awesome 6 Free";
+  content: "\e4f4";
+  font-weight: 900;
+  padding: 0px 10px;
+}
 
 main section#hero.grid {
   height: 92vh;

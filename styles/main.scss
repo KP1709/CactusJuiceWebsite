@@ -153,6 +153,13 @@ header.row {
     h2 {
         padding: 0 0 0 0;
         align-self: center;
+
+        &::before, &::after {
+            font-family: 'Font Awesome\ 6 Free';
+            content: "\e4f4";
+            font-weight: 900;
+            padding: 0px 10px;
+        }
     }
 
 }
