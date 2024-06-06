@@ -119,26 +119,23 @@ main section#hero.grid h1 {
     justify-self: none;
   }
 }
-main section#hero.grid #hero__img {
+main section#hero.grid #hero__img-tablet {
   grid-area: image;
   border-radius: 20px;
   width: 50%;
   justify-self: center;
 }
-main section#hero.grid #hero__img.slide-in-left {
+main section#hero.grid #hero__img-tablet.slide-in-left {
   margin-left: 0;
 }
 @media (min-width: 500px) {
-  main section#hero.grid #hero__img {
+  main section#hero.grid #hero__img-tablet {
     width: 30%;
   }
 }
 @media (min-width: 1000px) {
-  main section#hero.grid #hero__img {
-    width: 30em;
-  }
-  main section#hero.grid #hero__img.slide-in-down {
-    margin-top: 0;
+  main section#hero.grid #hero__img-tablet {
+    display: none;
   }
 }
 main section#hero.grid .slide-in-left {
@@ -151,6 +148,14 @@ main section#hero.grid .slide-in-left {
   }
   100% {
     margin-left: 0;
+  }
+}
+main section#hero.grid #hero__img-laptop {
+  display: none;
+}
+@media (min-width: 1000px) {
+  main section#hero.grid #hero__img-laptop {
+    display: flex;
   }
 }
 main section#hero.grid .slide-in-down {

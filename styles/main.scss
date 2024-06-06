@@ -197,7 +197,7 @@ main {
             }
         }
 
-        #hero__img {
+        #hero__img-tablet {
             grid-area: image;
             border-radius: 20px;
             width: 50%;
@@ -212,14 +212,10 @@ main {
             }
 
             @include laptop-small {
-                width: 30em;
-
-                &.slide-in-down {
-                    margin-top: 0;
-                }
+                display: none;
             }
         }
-
+        
         .slide-in-left {
             animation: ease-in-out 1s slide-left;
             margin-left: 0;
@@ -234,6 +230,15 @@ main {
                 }
             }
         }
+        
+        #hero__img-laptop{
+            display: none;
+
+            @include laptop-small{
+                display: flex;
+            }
+        }
+
 
         .slide-in-down {
             animation: ease-in-out 1s slide-down;
@@ -777,7 +782,7 @@ main {
         align-items: center;
         background-color: colors(mid-light-green);
 
-        h2{
+        h2 {
             text-align: center;
         }
 

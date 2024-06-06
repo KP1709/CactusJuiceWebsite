@@ -2,7 +2,7 @@
 var width = window.innerWidth;
 
 // Transition for Hero section
-const heroImg = document.getElementById("hero__img");
+const heroImg = document.getElementById("hero__img-tablet");
 const hero = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting && width < 1000) {
