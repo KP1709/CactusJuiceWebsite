@@ -154,7 +154,8 @@ header.row {
         padding: 0 0 0 0;
         align-self: center;
 
-        &::before, &::after {
+        &::before,
+        &::after {
             font-family: 'Font Awesome\ 6 Free';
             content: "\e4f4";
             font-weight: 900;
@@ -185,7 +186,6 @@ main {
             align-items: center;
             justify-content: space-evenly;
         }
-
 
         h1 {
             grid-area: title;
@@ -222,7 +222,7 @@ main {
                 display: none;
             }
         }
-        
+
         .slide-in-left {
             animation: ease-in-out 1s slide-left;
             margin-left: 0;
@@ -237,12 +237,14 @@ main {
                 }
             }
         }
-        
-        #hero__img-laptop{
+
+        #hero__img-laptop {
             display: none;
 
-            @include laptop-small{
+            @include laptop-small {
                 display: flex;
+                width: 40%;
+                padding: 0 5px;
             }
         }
 
