@@ -90,6 +90,7 @@ header.row h2::before, header.row h2::after {
   font-weight: 900;
   padding: 0px 10px;
   font-size: 15px;
+  vertical-align: 25%;
 }
 
 main section#hero.grid {
