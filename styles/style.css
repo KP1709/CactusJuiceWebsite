@@ -646,15 +646,15 @@ main section#product #product__content.grid button#add-to-cart-btn {
     justify-self: self-start;
   }
 }
-main section#product #product__content.grid button#quantity-btn-decrease {
-  border-radius: 0 5px 0 0;
+main section#product #product__content.grid button.quantity-btns {
   border: 2px solid #006400;
   background-color: #c2e2c2;
 }
+main section#product #product__content.grid button#quantity-btn-decrease {
+  border-radius: 0 5px 0 0;
+}
 main section#product #product__content.grid button#quantity-btn-increase {
   border-radius: 0 0 5px 0;
-  border: 2px solid #006400;
-  background-color: #c2e2c2;
 }
 main section#recommend.col {
   align-items: center;

@@ -777,16 +777,17 @@ main {
                     }
                 }
 
-                &#quantity-btn-decrease {
-                    border-radius: 0 $product-radius 0 0;
+                &.quantity-btns{
                     border: 2px solid colors(dark-green);
                     background-color: colors(light-green-2);
                 }
 
+                &#quantity-btn-decrease {
+                    border-radius: 0 $product-radius 0 0;                    
+                }
+
                 &#quantity-btn-increase {
                     border-radius: 0 0 $product-radius 0;
-                    border: 2px solid colors(dark-green);
-                    background-color: colors(light-green-2);
                 }
             }
         }
