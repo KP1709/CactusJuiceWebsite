@@ -486,20 +486,17 @@ main section#product {
 main section#product #product__content.grid {
   grid-template-columns: auto;
   grid-template-rows: repeat(5, auto);
-  grid-template-areas: "product-image" "product-title" "product-radio-volume" "product-input-quantity" "product-request-btn";
   justify-content: center;
 }
 @media (min-width: 1000px) {
   main section#product #product__content.grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: "product-image" "product-title" "product-radio-volume" "product-input-quantity" "product-request-btn";
     justify-content: center;
     column-gap: 20px;
   }
 }
 main section#product #product__content.grid #product__content-image {
-  grid-area: product-image;
   grid-row: 1;
   justify-self: center;
 }
@@ -529,7 +526,6 @@ main section#product #product__content.grid #product__content-image p {
   }
 }
 main section#product #product__content.grid #product__title {
-  grid-area: product-title;
   grid-row: 2;
   justify-self: center;
   font-size: 1.5rem;
@@ -561,7 +557,6 @@ main section#product #product__content.grid #product__radio.col {
   }
 }
 main section#product #product__content.grid #product__radio.col #product__radio-volume {
-  grid-area: product-radio-volume;
   grid-row: 3;
   border: 0;
   align-self: center;
@@ -606,7 +601,6 @@ main section#product #product__content.grid #product__radio.col #product__radio-
   background-color: #aad576;
 }
 main section#product #product__content.grid #product__radio.col #product__input-quantity {
-  grid-area: product-input-quantity;
   grid-row: 4;
 }
 @media (min-width: 1000px) {
@@ -625,7 +619,6 @@ main section#product #product__content.grid #product__radio.col input[type=text]
   border-radius: 5px 0 0 5px;
 }
 main section#product #product__content.grid button#add-to-cart-btn {
-  grid-area: product-request-btn;
   grid-row: 5;
   justify-self: center;
   width: 90%;
