@@ -10,6 +10,8 @@ $colors: (
     light-green: #cbf5cb,
     light-green-2:#c2e2c2,
     sand-yellow: #d7c27e,
+    dark-sand-yellow: #c0ad6f
+
 );
 
 $fonts: (
@@ -766,6 +768,10 @@ main {
                     border-radius: 5px;
                     background-color: colors(sand-yellow);
 
+                    &:hover{
+                        background-color: colors(dark-sand-yellow);
+                    }
+
                     @include laptop-small {
                         grid-column: 2;
                         grid-row: 3;
@@ -779,6 +785,10 @@ main {
                 &.quantity-btns{
                     border: 2px solid colors(dark-green);
                     background-color: colors(light-green-2);
+
+                    &:hover{
+                        background-color: colors(mid-green);
+                    }
                 }
 
                 &#quantity-btn-decrease {

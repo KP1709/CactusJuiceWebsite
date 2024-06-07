@@ -639,6 +639,9 @@ main section#product #product__content.grid button#add-to-cart-btn {
   border-radius: 5px;
   background-color: #d7c27e;
 }
+main section#product #product__content.grid button#add-to-cart-btn:hover {
+  background-color: #c0ad6f;
+}
 @media (min-width: 1000px) {
   main section#product #product__content.grid button#add-to-cart-btn {
     grid-column: 2;
@@ -652,6 +655,9 @@ main section#product #product__content.grid button#add-to-cart-btn {
 main section#product #product__content.grid button.quantity-btns {
   border: 2px solid #006400;
   background-color: #c2e2c2;
+}
+main section#product #product__content.grid button.quantity-btns:hover {
+  background-color: #aad576;
 }
 main section#product #product__content.grid button#quantity-btn-decrease {
   border-radius: 0 5px 0 0;
