@@ -606,6 +606,9 @@ main section#product #product__content.grid #product__radio.col #product__radio-
 main section#product #product__content.grid #product__radio.col #product__radio-volume input[type=radio]:checked + label {
   background-color: #aad576;
 }
+main section#product #product__content.grid #product__radio.col #product__radio-volume input[type=radio]:hover + label {
+  background-color: #aad576;
+}
 main section#product #product__content.grid #product__radio.col #product__input-quantity {
   grid-area: product-input-quantity;
   grid-row: 4;

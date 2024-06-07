@@ -726,6 +726,10 @@ main {
                         &[type="radio"]:checked+label {
                             background-color: colors(mid-green);
                         }
+                        
+                        &[type="radio"]:hover+label{
+                            background-color: colors(mid-green);
+                        }
                     }
                 }
 
