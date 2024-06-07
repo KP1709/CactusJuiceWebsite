@@ -604,12 +604,6 @@ main {
             @include laptop-small {
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(3, auto);
-                grid-template-areas:
-                    "product-image"
-                    "product-title"
-                    "product-radio-volume"
-                    "product-input-quantity"
-                    "product-request-btn";
                 justify-content: center;
                 column-gap: 20px;
             }
