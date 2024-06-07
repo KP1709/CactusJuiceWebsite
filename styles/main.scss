@@ -885,8 +885,27 @@ main {
                 #drink-4 {
                     grid-area: drink-4;
                 }
-
             }
+            
+                li.col.fade-in {
+                    opacity: 1;
+                }
+
+                .fade-in {
+                    animation: ease-in-out 4s slide;
+                    opacity: 1;
+    
+                    @keyframes slide {
+                        0% {
+                            opacity: 0;
+                        }
+    
+                        50% {
+                            opacity: 1;
+                        }
+                    }
+                }
+            
         }
     }
 }

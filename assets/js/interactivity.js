@@ -52,3 +52,25 @@ const effects = new IntersectionObserver(entries => {
 }, { threshold: 0.40 });
 
 effects.observe(document.querySelector('ul#effects__list'));
+
+
+// Transitions for Recommended Drinks section
+const drink1 = document.querySelector('#drink-1');
+const drink2 = document.querySelector('#drink-2');
+const drink3 = document.querySelector('#drink-3');
+const drink4 = document.querySelector('#drink-4');
+
+const drinks = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      drink1.classList.add('fade-in');
+      drink2.classList.add('fade-in');
+      drink3.classList.add('fade-in');
+      drink4.classList.add('fade-in');
+
+      return;
+    }
+  });
+}, { threshold: 0.40 });
+
+drinks.observe(document.querySelector('ul#recommend__drinks.grid'));

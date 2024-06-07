@@ -732,6 +732,21 @@ main section#recommend.col #recommend__drinks.grid li.col #drink-3 {
 main section#recommend.col #recommend__drinks.grid li.col #drink-4 {
   grid-area: drink-4;
 }
+main section#recommend.col #recommend__drinks.grid li.col.fade-in {
+  opacity: 1;
+}
+main section#recommend.col #recommend__drinks.grid .fade-in {
+  animation: ease-in-out 4s slide;
+  opacity: 1;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
 
 footer {
   background-color: #aad576;
