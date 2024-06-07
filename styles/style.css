@@ -89,6 +89,7 @@ header.row h2::before, header.row h2::after {
   content: "\e4f4";
   font-weight: 900;
   padding: 0px 10px;
+  font-size: 15px;
 }
 
 main section#hero.grid {
