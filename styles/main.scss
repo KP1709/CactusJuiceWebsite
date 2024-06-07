@@ -593,17 +593,30 @@ main {
         #product__content.grid {
             grid-template-columns: auto;
             grid-template-rows: repeat(5, auto);
+            grid-template-areas:
+                "product-image"
+                "product-title"
+                "product-radio-volume"
+                "product-input-quantity"
+                "product-request-btn";
             justify-content: center;
 
             @include laptop-small {
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(3, auto);
+                grid-template-areas:
+                    "product-image"
+                    "product-title"
+                    "product-radio-volume"
+                    "product-input-quantity"
+                    "product-request-btn";
                 justify-content: center;
                 column-gap: 20px;
             }
 
 
             #product__content-image {
+                grid-area: product-image;
                 grid-row: 1;
                 justify-self: center;
 
@@ -633,6 +646,7 @@ main {
             }
 
             #product__title {
+                grid-area: product-title;
                 grid-row: 2;
                 justify-self: center;
 
@@ -665,6 +679,7 @@ main {
                 }
 
                 #product__radio-volume {
+                    grid-area: product-radio-volume;
                     grid-row: 3;
                     border: 0;
                     align-self: center;
@@ -715,6 +730,7 @@ main {
                 }
 
                 #product__input-quantity {
+                    grid-area: product-input-quantity;
                     grid-row: 4;
                 }
 
@@ -740,6 +756,7 @@ main {
             button {
 
                 &#add-to-cart-btn {
+                    grid-area: product-request-btn;
                     grid-row: 5;
                     justify-self: center;
 
