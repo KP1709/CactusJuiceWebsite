@@ -702,10 +702,11 @@ main section#recommend.col #recommend__drinks.grid li.col p {
   }
 }
 main section#recommend.col #recommend__drinks.grid li.col a:any-link {
-  color: #006400;
-  text-decoration: none;
+  margin-top: 10px;
   padding: 2px 10px;
   background-color: #cbf5cb;
+  color: #006400;
+  text-decoration: none;
   border-radius: 5px;
 }
 main section#recommend.col #recommend__drinks.grid li.col #drink-1 {
