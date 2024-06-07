@@ -1,10 +1,16 @@
 let increaseQuantityBtn = document.getElementById("quantity-btn-increase");
 let decreaseQuantityBtn = document.getElementById("quantity-btn-decrease");
 let productQuantity = document.getElementById("quantity__input-box");
-
 let addToCartBtn = document.getElementById("add-to-cart-btn");
 
+function getBottleMlValue() {
+  let ele = document.getElementsByName('juice-ml');
 
+  for (let i = 0; i < ele.length; i++) {
+      if (ele[i].checked)
+          return ele[i].value
+  }
+}
 
 increaseQuantityBtn.addEventListener("click", () => {
   productQuantity.value = parseInt(productQuantity.value) + 1;
@@ -23,9 +29,10 @@ decreaseQuantityBtn.addEventListener("click", () => {
 
 addToCartBtn.addEventListener("click", () => {
   if (parseInt(productQuantity.value) && parseInt(productQuantity.value) > 0) {
-    alert("Your order has been requested")
+    alert(`Your order for ${parseInt(productQuantity.value)} ${getBottleMlValue()} bottle(s) has been requested`)
   }
   else {
     alert("An invalid quantity has been entered - enter a valid value")
   }
 })
+
