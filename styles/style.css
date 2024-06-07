@@ -691,6 +691,7 @@ main section#recommend.col #recommend__drinks.grid {
 }
 main section#recommend.col #recommend__drinks.grid li.col {
   align-items: center;
+  opacity: 0;
 }
 main section#recommend.col #recommend__drinks.grid li.col img {
   width: 70%;
