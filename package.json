@@ -10,7 +10,7 @@
     "compile": "sass --watch --no-source-map styles/main.scss styles/style.css"
   },
   "devDependencies": {
-    "vite": "^5.2.14"
+    "vite": "^5.4.21"
   },
   "dependencies": {
     "netlify": "^13.1.17",
